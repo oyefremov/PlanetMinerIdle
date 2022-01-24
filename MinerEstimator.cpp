@@ -108,7 +108,7 @@ std::array<const char*, ResourceSize> names{
 
 auto best_ore = Rhodium;
 auto best_alloy = MaxResource;
-auto best_item = Motor;
+auto best_item = WindTurbine;
 
 double alloy_ingredients_multiplier = (1.0 - 0.38) * 0.8;
 double item_ingredients_multiplier = (1.0 - 0.42) * 0.8;
@@ -284,24 +284,29 @@ std::array<Resource, ResourceSize> init_resources(){
     res[Lead].stars = 4;
     res[Silica].stars = 10;
     res[Aluminium].stars = 4;
-    res[Silver].stars = 5;
+    res[Silver].stars = 8;
     res[Gold].stars = 6;
     res[Diamond].stars = 2;
     res[Platinum].stars = 3;
     res[Titanium].stars = 3;
+    res[Iridium].stars = 1;
+    res[Paladium].stars = 2;
+    res[Osmium].stars = 1;
 
     res[CopperBar].stars = 1;
-    res[IronBar].stars = 5;
+    res[IronBar].stars = 6;
     res[LeadBar].stars = 2;
     res[SilicaBar].stars = 3;
     res[AluminiumBar].stars = 2;
     res[SilverBar].stars = 4;
     res[GoldBar].stars = 5;
-    res[BronzeBar].stars = 4;
+    res[BronzeBar].stars = 5;
     res[SteelBar].stars = 5;
     res[PlatinumBar].stars = 3;
     res[TitaniumBar].stars = 4;
     res[IridiumBar].stars = 2;
+    res[PaladiumBar].stars = 3;
+    res[OsmiumBar].stars = 3;
 
     res[CopperWire].stars = 4;
     res[IronNails].stars = 2;
@@ -315,10 +320,11 @@ std::array<Resource, ResourceSize> init_resources(){
     res[SolarPanel].stars = 1;
     res[LaserTorch].stars = 2;
     res[AdvancedBattery].stars = 1;
-    res[ThermalScanner].stars = 4;
+    res[ThermalScanner].stars = 6;
     res[AdvancedComputer].stars = 5;
     res[NavigationModule].stars = 4;
-    res[Motor].stars = 1;
+    res[Motor].stars = 4;
+    res[NuclearCapsule].stars = 2;
 
     // multipliers
     //res[Lead].price_multiplier = 0.33;
