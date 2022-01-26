@@ -39,7 +39,9 @@ using namespace std;
     ITEM(Iridium    )\
     ITEM(Paladium   )\
     ITEM(Osmium     )\
-    ITEM(Rhodium    )
+    ITEM(Rhodium    )\
+    ITEM(Inerton    )\
+    ITEM(Quadium    )
 
 
 #define LIST_ALLOYS(ITEM) \
@@ -57,7 +59,9 @@ using namespace std;
     ITEM(IridiumBar)\
     ITEM(PaladiumBar)\
     ITEM(OsmiumBar)\
-    ITEM(RhodiumBar)
+    ITEM(RhodiumBar)\
+    ITEM(InertonBar)\
+    ITEM(QuadiumBar)
 
 // List items
 #define LIST_ITEMS(ITEM) \
@@ -83,9 +87,11 @@ using namespace std;
     ITEM(Motor           )\
     ITEM(Accumulator     )\
     ITEM(NuclearCapsule  )\
-    ITEM(WindTurbine     )
-
-
+    ITEM(WindTurbine     )\
+    ITEM(SpaceProbe	     )\
+    ITEM(NuclearReactor  )\
+    ITEM(Collider        )\
+    ITEM(GravityChamber  )
 
 
 enum ResourceId{
@@ -211,6 +217,8 @@ std::vector<Resource> all_ore() {
         make_ore(Paladium, 3'500),
         make_ore(Osmium, 7'800),
         make_ore(Rhodium, 17'500),
+        make_ore(Inerton, 40'000),
+        make_ore(Quadium, 92'000),
     };
 }
 
@@ -231,6 +239,8 @@ std::vector<Resource> all_alloy() {
         make_alloy(PaladiumBar, 7'000'000, 16min, {{PlatinumBar, 2}, {Paladium, 1000}}),
         make_alloy(OsmiumBar, 14'500'000, 18min, {{TitaniumBar, 2}, {Osmium, 1000}}),
         make_alloy(RhodiumBar, 31'000'000, 20min, {{IridiumBar, 2}, {Rhodium, 1000}}),
+        make_alloy(InertonBar, 250'000'000, 24min, {{PaladiumBar, 2}, {Inerton, 1000}}),
+        make_alloy(QuadiumBar, 500'000'000, 28min, {{OsmiumBar, 2}, {Quadium, 1000}}),
     };
 }
 
@@ -249,18 +259,21 @@ std::vector<Resource> all_items() {
         make_item(LaserTorch, 31'000'000, 120min, BronzeBar, 5, Laser, 2, Lense, 5),
         make_item(AdvancedBattery, 35'000'000, 150min, SteelBar, 20, Battery, 30),
         make_item(ThermalScanner, 71'500'000, 10800s, PlatinumBar, 5, Laser, 2, Glass, 5),
-
         make_item(AdvancedComputer, 180'000'000, 12600s, BasicComputer, 5, TitaniumBar, 5),
         make_item(NavigationModule, 1'000'000'000, 13500s, LaserTorch, 2, ThermalScanner, 1),
         make_item(PlasmaTorch, 1'150'000'000, 15000s, IridiumBar, 15, LaserTorch, 5),
         make_item(RadioTower, 1'450'000'000, 15600s, PlatinumBar, 75, AluminiumBar, 150, TitaniumBar, 50),
         make_item(Telescope, 2'700'000'000, 16800s, Lense, 20, AdvancedComputer, 1),
-
         make_item(SatelliteDish, 3'400'000'000, 18000s, SteelBar, 150, PaladiumBar, 20),
         make_item(Motor, 7'000'000'000, 19200s, BronzeBar, 500, Hammer, 200),
         make_item(Accumulator, 12'000'000'000, 20'400s, OsmiumBar, 20, AdvancedBattery, 2),
         make_item(NuclearCapsule, 26'000'000'000, 21000s, RhodiumBar, 5, PlasmaTorch, 1),
         make_item(WindTurbine, 140'000'000'000, 21600s, AluminiumBar, 150, Motor, 1),
+        make_item(SpaceProbe,        180'000'000'000, 22200s, SatelliteDish, 1, Telescope, 1, SolarPanel, 25),
+        make_item(NuclearReactor,  1'000'000'000'000, 22800s, NuclearCapsule, 1, IridiumBar, 300),
+        make_item(Collider,        2'000'000'000'000, 23100s, Inerton, 500, Quadium, 100),
+        make_item(GravityChamber, 15'000'000'000'000, 24300s, AdvancedComputer, 60, NuclearReactor, 1),
+
     };
 }
 
