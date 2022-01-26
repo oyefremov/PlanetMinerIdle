@@ -113,11 +113,11 @@ std::array<const char*, ResourceSize> names{
 // config:
 
 auto best_ore = Rhodium;
-auto best_alloy = MaxResource;
-auto best_item = WindTurbine;
+auto best_alloy = TitaniumBar;
+auto best_item = NavigationModule;
 
-double alloy_ingredients_multiplier = (1.0 - 0.38) * 0.8;
-double item_ingredients_multiplier = (1.0 - 0.42) * 0.8;
+double alloy_ingredients_multiplier = (1.0 - 0.38); // *0.8;
+double item_ingredients_multiplier = 0.5; // *0.8;
 
 double alloy_value_multiplier = 1.0;
 double item_value_multiplier = 1.0;
@@ -297,10 +297,10 @@ std::array<Resource, ResourceSize> init_resources(){
     res[Lead].stars = 4;
     res[Silica].stars = 10;
     res[Aluminium].stars = 4;
-    res[Silver].stars = 8;
+    res[Silver].stars = 9;
     res[Gold].stars = 6;
     res[Diamond].stars = 2;
-    res[Platinum].stars = 3;
+    res[Platinum].stars = 4;
     res[Titanium].stars = 3;
     res[Iridium].stars = 1;
     res[Paladium].stars = 2;
@@ -312,9 +312,9 @@ std::array<Resource, ResourceSize> init_resources(){
     res[SilicaBar].stars = 3;
     res[AluminiumBar].stars = 2;
     res[SilverBar].stars = 4;
-    res[GoldBar].stars = 5;
+    res[GoldBar].stars = 6;
     res[BronzeBar].stars = 5;
-    res[SteelBar].stars = 5;
+    res[SteelBar].stars = 6;
     res[PlatinumBar].stars = 3;
     res[TitaniumBar].stars = 4;
     res[IridiumBar].stars = 2;
@@ -324,16 +324,16 @@ std::array<Resource, ResourceSize> init_resources(){
     res[CopperWire].stars = 4;
     res[IronNails].stars = 2;
     res[Battery].stars = 2;
-    res[Hammer].stars = 2;
+    res[Hammer].stars = 3;
     res[Glass].stars = 6;
-    res[Circuit].stars = 0;
+    res[Circuit].stars = 2;
     res[Lense].stars = 3;
-    res[Laser].stars = 2;
+    res[Laser].stars = 3;
     res[BasicComputer].stars = 5;
     res[SolarPanel].stars = 1;
     res[LaserTorch].stars = 2;
     res[AdvancedBattery].stars = 1;
-    res[ThermalScanner].stars = 6;
+    res[ThermalScanner].stars = 7;
     res[AdvancedComputer].stars = 5;
     res[NavigationModule].stars = 4;
     res[Motor].stars = 4;
