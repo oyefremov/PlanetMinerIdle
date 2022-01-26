@@ -135,7 +135,8 @@ struct ResCount {
 };
 
 ResCount count_ingredients(ResCount rc, double k) {
-    rc.count = static_cast<uint32_t>(floor(rc.count * k + 0.5));
+    // 0.5 must be round down so that round(5 * 0.5) -> 2
+    rc.count = static_cast<uint32_t>(ceil(rc.count * k - 0.5));
     if (rc.count == 0) rc.count = 1;
     return rc;
 }
