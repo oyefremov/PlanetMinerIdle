@@ -299,7 +299,7 @@ std::array<Resource, ResourceSize> init_resources(){
     res[Silica].stars = 10;
     res[Aluminium].stars = 4;
     res[Silver].stars = 9;
-    res[Gold].stars = 6;
+    res[Gold].stars = 8;
     res[Diamond].stars = 2;
     res[Platinum].stars = 4;
     res[Titanium].stars = 3;
@@ -309,24 +309,24 @@ std::array<Resource, ResourceSize> init_resources(){
 
     res[CopperBar].stars = 1;
     res[IronBar].stars = 6;
-    res[LeadBar].stars = 2;
+    res[LeadBar].stars = 3;
     res[SilicaBar].stars = 3;
     res[AluminiumBar].stars = 2;
     res[SilverBar].stars = 4;
     res[GoldBar].stars = 6;
     res[BronzeBar].stars = 5;
     res[SteelBar].stars = 6;
-    res[PlatinumBar].stars = 3;
+    res[PlatinumBar].stars = 5;
     res[TitaniumBar].stars = 4;
-    res[IridiumBar].stars = 2;
+    res[IridiumBar].stars = 4;
     res[PaladiumBar].stars = 3;
     res[OsmiumBar].stars = 3;
 
-    res[CopperWire].stars = 4;
+    res[CopperWire].stars = 5;
     res[IronNails].stars = 2;
     res[Battery].stars = 2;
     res[Hammer].stars = 3;
-    res[Glass].stars = 6;
+    res[Glass].stars = 9;
     res[Circuit].stars = 2;
     res[Lense].stars = 3;
     res[Laser].stars = 3;
@@ -337,7 +337,8 @@ std::array<Resource, ResourceSize> init_resources(){
     res[ThermalScanner].stars = 7;
     res[AdvancedComputer].stars = 5;
     res[NavigationModule].stars = 4;
-    res[Motor].stars = 4;
+    res[SatelliteDish].stars = 2;
+    res[Motor].stars = 6;
     res[NuclearCapsule].stars = 2;
 
     // multipliers
