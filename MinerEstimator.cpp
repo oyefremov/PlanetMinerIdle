@@ -297,14 +297,14 @@ std::array<Resource, ResourceSize> init_resources(){
     res[Iron].stars = 3;
     res[Lead].stars = 4;
     res[Silica].stars = 10;
-    res[Aluminium].stars = 4;
+    res[Aluminium].stars = 5;
     res[Silver].stars = 9;
     res[Gold].stars = 8;
     res[Diamond].stars = 2;
     res[Platinum].stars = 4;
     res[Titanium].stars = 3;
     res[Iridium].stars = 1;
-    res[Paladium].stars = 2;
+    res[Paladium].stars = 3;
     res[Osmium].stars = 1;
 
     res[CopperBar].stars = 1;
@@ -318,7 +318,7 @@ std::array<Resource, ResourceSize> init_resources(){
     res[SteelBar].stars = 6;
     res[PlatinumBar].stars = 5;
     res[TitaniumBar].stars = 4;
-    res[IridiumBar].stars = 4;
+    res[IridiumBar].stars = 5;
     res[PaladiumBar].stars = 3;
     res[OsmiumBar].stars = 3;
 
@@ -326,7 +326,7 @@ std::array<Resource, ResourceSize> init_resources(){
     res[IronNails].stars = 2;
     res[Battery].stars = 2;
     res[Hammer].stars = 3;
-    res[Glass].stars = 9;
+    res[Glass].stars = 10;
     res[Circuit].stars = 2;
     res[Lense].stars = 3;
     res[Laser].stars = 3;
