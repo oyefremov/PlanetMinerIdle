@@ -272,7 +272,7 @@ std::vector<Resource> all_items() {
         make_item(WindTurbine, 140'000'000'000, 21600s, AluminiumBar, 150, Motor, 1),
         make_item(SpaceProbe,        180'000'000'000, 22200s, SatelliteDish, 1, Telescope, 1, SolarPanel, 25),
         make_item(NuclearReactor,  1'000'000'000'000, 22800s, NuclearCapsule, 1, IridiumBar, 300),
-        make_item(Collider,        2'000'000'000'000, 23100s, Inerton, 500, Quadium, 100),
+        make_item(Collider,        2'000'000'000'000, 23100s, InertonBar, 500, QuadiumBar, 100),
         make_item(GravityChamber, 15'000'000'000'000, 24300s, AdvancedComputer, 60, NuclearReactor, 1),
 
     };
